@@ -32,7 +32,7 @@ public class MasterList<orders> {
             result += orders.get(i).getNumOrdered() + " " + orders.get(i).getVariety() + ", ";
         }
         if(!result.equals("")) {
-            result = result.substring(0, result.length() -1);
+            result = result.substring(0, result.length() -2);
         }
         else {
             return "There are no orders";
